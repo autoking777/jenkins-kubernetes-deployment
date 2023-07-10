@@ -1,6 +1,9 @@
 pipeline {
+  environment {
+    dockerimagename = "autoking777/react-app"
+    dockerImage = ""
+  }
   agent any
-
   stages {
     stage('Checkout Source') {
       steps {
