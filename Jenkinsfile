@@ -17,10 +17,3 @@ pipeline {
       }
     }
    }
-    stage('Pushing Image') {
-      environment {
-               registryCredential = 'dockerhub-credentials'
-           }
-      }
-    }
-   }
