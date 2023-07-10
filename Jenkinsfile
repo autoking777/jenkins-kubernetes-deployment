@@ -2,12 +2,12 @@ pipeline {
   environment {
     dockerimagename = "autoking777/react-app"
     dockerImage = ""
-  }
-  agent any
+    
+agent any
   stages {
-    stage('Checkout Source') {
+    stage('Cloning Git') {
       steps {
-        git "https://github.com/autoking777/jenkins-kubernetes-deployment.git"
+        git([url: 'git branch: 'main', credentialsId: 'github-credentials', url: 'https://github.com/autoking777/jenkins-kubernetes-deployment.git'])
   }
 }
   }
