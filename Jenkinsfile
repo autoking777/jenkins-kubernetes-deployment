@@ -12,5 +12,3 @@ pipeline {
           dockerImage = docker.build dockerimagename
         }
       }
-    }
-  }
